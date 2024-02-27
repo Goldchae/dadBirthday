@@ -1,0 +1,78 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>working ramram</title>
+  
+  <style>
+    .center {
+      background-color: #FFCCFF;
+    }
+  </style>
+  
+  <script>
+  	function clock() {
+  		var fname ="";
+  		var today =new Date();
+  		var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      var i = today.getMilliseconds();
+      var hh = String(h);
+      var mm = String(m);
+      var ss = String(s);
+      var ii = String(i);
+      var whatTime = hh+mm+ss+ii
+      var realTime = parseInt(whatTime)
+      
+  		if(realTime>=090000000 && realTime<113000000){
+  			fname="./picture/morning.gif";
+  		}
+  		else if(realTime>=113000000 && realTime<=113600000){
+  			fname="./picture/lunch.gif";
+  		}
+      else if(realTime>=123000000 && realTime<=123600000){
+  			fname="./picture/goback.gif";
+  		}
+      else if(realTime>=123600000 && realTime<180000000){
+  			fname="./picture/afternoon.gif";
+  		}
+      else if(realTime>=180000000 && realTime<=180600000){
+  			fname="./picture/gohome.gif";
+  		}
+      else{
+        fname="./picture/lunchtime.png";
+      }
+  		
+  		document.getElementById("time").src=fname;
+      setTimeout('location.reload()',600000);
+  	}
+
+    var cover = document.getElementById("time");
+		cover.addEventListener("mouseover",changePic, false);
+    cover.addEventListener("mouseout",originPic, false);
+    
+    function changePic() {
+      cover.src = "./picture/1.png";
+    }
+    function originPic() {
+      cover.src = "./picture/1.png";
+    }
+    
+  	
+</script>
+  
+</head>
+  
+<body onload="clock()">
+	<img id="time" src="" width=500px height=700px >
+ 
+    
+   
+</body>
+  
+</html>

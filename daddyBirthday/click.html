@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="img" onclick="toggleImg()" src="./picture/morning.gif">
+    </div>
+
+    
+  <script>
+    function toggleImg() {
+      const data = [
+        "./picture/1.png",
+        "./picture/2.png",
+        "./picture/3.png",
+        "./picture/4.png",
+        "./picture/5.png",
+        "./picture/6.png",
+      ];
+      
+      function randomValueFromArray(array) {
+        const random = Math.floor(Math.random() * array.length);
+        return array[random];
+      }
+      
+      let picture = randomValueFromArray(data);
+
+      document.getElementById("img").src = picture;
+    }
+  </script>
+  </body>
+</html>

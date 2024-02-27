@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>아빠 생신 축하드립니다</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+    .outer {
+    text-align: center;
+    border:5px dashed;
+    padding:10px;
+    border-color: #CC66CC;
+    width : 700px;
+    height: 500px ;
+    background-color:#FDDCEF; 
+    color:#CC66CC;  
+    line-height: 1.5em;
+    font-family: arial;
+    }
+
+    #center{
+      position: relative;
+      left: 300px;
+      top: 50px;
+    }
+    
+    #lolo {
+      font-weight: 400;
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+    
+    #pink {
+      color:#660066;
+      font-weight: 400;
+    }
+    
+    
+    body{
+      background-image : url('https://cdn.pixabay.com/photo/2020/09/09/02/12/smearing-5556288_960_720.jpg');
+      background-size : cover ; 
+    }
+  
+    
+  </style>
+    
+
+  <script>
+
+    function popup(){
+      window.open("pop.html","work with me!", "width=500px, height=700px, left=500, top=150")
+    }
+    function popingup(){
+      window.open("click.html","work with me!", "width=500px, height=700px, left=500, top=150")
+    }
+
+  		var fname ="";
+  		var today =new Date();
+  		var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      var i = today.getMilliseconds();
+      var hh = String(h);
+      var mm = String(m);
+      var ss = String(s);
+      var ii = String(i);
+      var whatTime = hh+mm+ss+ii
+      var realTime = parseInt(whatTime)
+     
+    console.log(realTime)
+  </script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body background="#FFCCFF">
+  
+  <div class=outer style="position: absolute; left: 400px; top: 140px;">
+    <br>
+    <h1 id=pink >[Work With me!]</h1>
+    <br>
+    <h3 id=lolo >람쥐가 같이 코딩을 합니다!</h3>
+    <h3 id=lolo>람쥐는 점심시간 (11시 30분) 에 밥을 먹으러 갑니다!</h3>
+    <h3 id=lolo>람쥐는 음료를 사들고 복귀합니다! (12시 30분)</h3>
+    <h3 id=lolo>람쥐는 6시에 칼퇴합니다!</h3>
+    <br>
+    <h3 id=lolo>일하는 람쥐를 클릭하면 메세지가 뜹니다! (두번째버튼)</h3>
+    <br>
+    <button type="button" class="btn btn-outline-secondary" onclick="popup()" >람쥐와 함께하기</button>
+    <button type="button" class="btn btn-outline-secondary" onclick="popingup()" >람쥐와 함께하기2</button>
+    <h6>팝업 차단 해제해주세요</h6>
+    <br>
+ </div>
+  
+
+  
+<button onclick="location.href='sad.html'" class="btn btn-outline-secondary" >변명</button>
+</body>
+
+</html>
