@@ -5,6 +5,7 @@
 
 ![img](./image/c.png)
 ![img](./image/7.png)
+
 보다시피...사족이길다
 
 ![img](./image/3.png)
@@ -18,4 +19,5 @@
 ### link
 
 실행 링크 : https://db771347-9bda-48c7-b5d2-955cc636837f-00-xnouz282kl91.spock.replit.dev
+
 블로그 링크 : https://junggoldchae-coding.tistory.com/entry/HTMLCSSJS-아빠-생일-프로그램
